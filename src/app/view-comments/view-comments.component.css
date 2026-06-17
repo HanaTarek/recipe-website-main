@@ -1,0 +1,62 @@
+.header{
+  padding-bottom: 50px;
+}
+
+hr{
+color: #e45644;
+background-color: #e45644;
+size: 1px;
+border: #e45644 0.25px solid;
+font-family: 'Poppins', sans-serif;
+}
+
+h2{
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #e45644;
+  text-align: left;
+  line-height: normal;
+  font-size: 30px;
+  padding-left: 70px;
+  font-family: 'Poppins', sans-serif;
+}
+.comment-name{
+  box-sizing: border-box;
+  font-family: 'Poppins Bold', 'Poppins Regular', 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #e45644;
+  text-align: left;
+  line-height: normal;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 700px;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+.comment-body{
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #555555;
+  text-align: left;
+  line-height: normal;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+.p-rating{
+  float: left;
+
+}
+.CommentRate{
+  float: right;
+  padding-left: 100px;
+
+}

@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="content-box">
+      <div class="left"></div>
+      <div class="right">
+          <h2>Add Recipe</h2>
+          <form [formGroup]="addRecipeForm" (ngSubmit)="onSubmit()">
+            <p>
+              <label for="recipeName">Recipe Name </label>
+              <input type="text" id="recipeName" name="recipeName" formControlName="recipeName">
+            </p>
+
+            <p>
+              <label for="cookTime">Cook Time </label>
+              <input type="text" id="cookTime" name="cookTime" formControlName="cookTime">
+            </p>
+
+            <p>
+              <label for="description">Description </label>
+              <input type="text" id="description" name="description" formControlName="description">
+            </p>
+
+            <p>
+              <label for="cuisine">Cuisine </label>
+              <input type="text" id="cuisine" name="cuisine" formControlName="cuisine">
+            </p>
+
+            <p>
+              <label for="instructions">Instructions </label>
+              <input type="text" id="instructions" name="instructions" formControlName="instructions">
+            </p>
+
+            <p>
+              <button type="submit" class="btn">Submit</button>
+            </p>
+
+          </form>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.speciality-header {
+  flex: 0 0 100%;
+  margin-bottom: 20px;
+}
+
+.speciality-header h2 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size:40px;
+  margin-bottom: 10px;
+  margin-top:20px;
+}
+
+.speciality-header p {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.speciality-header h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.meal-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.meal-plan {
+  margin: 10px;
+  text-align: center;
+}
+
+.meal-plan img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border:#222d39 solid 2px;
+}
+
+.meal-plan h3 {
+  font-size: 18px;
+  font-family: "Poppins";
+  margin-top: 10px;
+
+}
+
+.btn {
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 60px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  transition: all ease 0.5s 0s;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 800;
+  box-sizing: content-box;
+  text-align: center;
+  transition-duration: 0.3s;
+  display: inline-block;
+  overflow: hidden;
+  background: #E45644;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #E45644;
+}
+
+.btn a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.speciality-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+

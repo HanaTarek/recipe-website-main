@@ -1,0 +1,128 @@
+
+<div class="backButtonAndTitle" >
+  <i class="fa-solid fa-angle-left" id="Back"></i>
+  <h1 class="Title">{{ Recipe.name }}</h1>
+  </div>
+  <div class="ratingContainer">
+  <p-rating [(ngModel)]="value"  [cancel]="false" [readonly]="true" ></p-rating>
+  </div>
+
+
+  <div class="boxContainer">
+    <div class="box">
+      <div class="imageIcon">
+      <div class="image-container">
+      <img [src]=Recipe.image  alt="Recipe Image" />
+      </div>
+
+
+      <div class="icon-container">
+
+        <i class="fa-solid fa-comment" ></i>
+        <i [class]="bookmarkIconClass" (click)="togglebookmark()"></i>
+        <i [class]="heartIconClass" (click)="toggleHeart()"></i>
+        <i class="fa-solid fa-calendar-days"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="tag">{{ Recipe.tags | uppercase }}  </div>
+      <div class="description">{{ Recipe.description }}</div>
+    </div>
+
+
+  </div>
+  </div>
+
+
+  <div class="underboxContainer">
+    <div class="underbox">
+      <div class="calories"> Calories: {{ Recipe.CALORIES }}</div>
+      <div class="calories"> Prep: {{ Recipe.PREP }}</div>
+      <div class="calories"> Cook: {{ Recipe.COOK_TIME }}</div>
+      <div class="calories"> Cuisine: {{ Recipe.CUISINE }}</div>
+    </div>
+    </div>
+    <hr>
+
+    <div>
+      <h2>Ingredients</h2>
+      <div class="tableContanier">
+        <table id="Ingredients">
+<tbody>
+          <tr *ngFor="let ingredient of Recipe.Ingrident">
+            <td class="amountTable">{{ ingredient.quantity }}</td>
+            <td class="ingrediantTable">{{ ingredient.name }}</td>
+
+          </tr>
+</tbody>
+        </table>
+    </div>
+    </div>
+
+
+
+
+<hr>
+<div>
+  <h2>Directions</h2>
+  <ol>
+    <li *ngFor="let direction of Recipe.Instructions">{{ direction.description }}</li>
+  </ol>
+</div>
+
+<hr>
+
+<div>
+  <h2>NUTRITIONAL INFO</h2>
+  <div class="nutritionalInfoContainer">
+  <table id="nutritinalInfoTable">
+    <tbody>
+    <tr>
+      <th class="infoC1Table" >PER SERVING</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.servingSize }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">CALORIES (KCAL)</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.calories }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">TOTAL FAT (G)</th>
+      <td class="nfoC2Table">{{ Recipe.nutritionalInfo.fat }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">CHOLESTEROL (MG)</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.cholesterol }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">SODIUM (MG)</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.sodium }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">TOTAL CARBOHYDRATE (G)</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.carbs }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">DIETARY FIBER (G)</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.fiber }}</td>
+    </tr>
+    <tr>
+      <th class="infoC1Table">TOTAL SUGARS (G)</th>
+      <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.sugar }}</td>
+    </tr>
+    <tr>
+       <th class="infoC1Table">PROTEIN (G)</th>
+        <td class="nfoC2Table" >{{ Recipe.nutritionalInfo.protein }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+<app-comment-form id="CommentForm"></app-comment-form>
+
+
+

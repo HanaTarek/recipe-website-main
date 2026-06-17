@@ -1,0 +1,70 @@
+
+<hr>
+<h2>Leave a Comment</h2>
+<hr>
+<h3 id="Note">Your email address will not be published. Required fields are marked *</h3>
+<div class="FormbodyContainer">
+<div class="container">
+  <form [formGroup]="AddCommentForm" (ngSubmit)="submit()">
+
+    <div class="ratingContainer">
+    <h3 id="RecipeRating">Recipe Rating</h3>
+
+<p-rating formControlName="rate"  [cancel]="false" ></p-rating>
+    </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="NewCommentEmail">EMAIL ADRESS* </label>
+    </div>
+    <div class="col-75">
+      <input formControlName="email" name="NewCommentEmail" id="newCommentEmail" type="text" placeholder="jana@gmail.com" required />
+      <div *ngIf="AddCommentForm.get('email')!.invalid && ( AddCommentForm.get('email')!.dirty || AddCommentForm.get('email')!.touched)">
+        <div *ngIf="AddCommentForm.get('email')!.hasError('required')">Email is required.</div>
+        <div *ngIf="AddCommentForm.get('email')!.hasError('email')">Please enter a valid email address.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="newCommentName">NAME*</label>
+    </div>
+    <div class="col-75">
+      <input
+  formControlName="name"
+  name="newCommentName"
+  id="newCommentName"
+  type="text"
+  placeholder="Jana Mohamed"
+  required
+/>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-25">
+      <label for="newcommentDescription">COMMENT*</label>
+    </div>
+    <div class="col-75">
+      <textarea formControlName="commentDescription" id="subject" id="newcommentDescription" name="newcommentDescription" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" [disabled]="!AddCommentForm.valid" value="Post Comment">
+  </div>
+  </form>
+</div>
+
+</div>
+
+
+
+
+
+    <div>
+      <app-view-comments [Comment]="Comment"></app-view-comments>
+    </div>
+

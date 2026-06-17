@@ -1,0 +1,24 @@
+
+<div class="header">
+  <h4 class="mb-0 fw-semibold lh-1">Followers</h4>
+  <p class="mb-0 fs-4">20</p>
+</div>
+
+<div class="row">
+
+  <div class=" col-md-6 col-xl-4">
+    <div class="card">
+      <div class="card-body p-4 d-flex align-items-center gap-3">
+        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle" width="40" height="40">
+        <div>
+          <h5 class="fw-semibold mb-0">Betty Adams</h5>
+          <span class="fs-2 d-flex align-items-center"><i class="ti ti-map-pin text-dark fs-3 me-1"></i>Sint Maarten</span>
+        </div>
+        <button
+      (click)="toggleFollow()" class="btn btn-outline-primary py-1 px-2 ms-auto" [ngStyle]="{ 'background-color': isFollowing ? '#e45644' : '#e4564499', 'color': 'white' }" > {{ isFollowing ? 'Unfollow' : 'Follow' }} </button>
+      </div>
+    </div>
+  </div>
+
+
+</div>

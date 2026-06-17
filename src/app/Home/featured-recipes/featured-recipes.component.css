@@ -1,0 +1,48 @@
+h2{
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size:40px;
+  text-align: center;
+  margin:20px;
+}
+
+.btn {
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 60px;
+  border: 1px solid black;
+  text-transform: uppercase;
+  transition: all ease 0.5s 0s;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 800;
+  box-sizing: content-box;
+  text-align: center;
+  transition-duration: 0.3s;
+  display: inline-block;
+  overflow: hidden;
+  background: #E45644;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #E45644;
+}
+
+.btn a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.recipes-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.featured-recipes{
+  padding:20px;
+}

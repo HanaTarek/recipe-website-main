@@ -1,0 +1,173 @@
+
+.image-container img{
+  filter: brightness(65%);
+  z-index: 1;
+
+}
+
+.text {
+  color:#fff;
+  font-size: 15px;
+  padding: 235px 0;
+  position: absolute;
+  top: 15%;
+  width: 45%;
+  text-align: left;
+  margin-left: 65px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+}
+.text h1{
+  text-align: left;
+  display: block;
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 0;
+}
+
+.text p{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+/*Browse Healthy Recipes Section*/
+.browse-img img{
+  width: 520px;
+  left:auto;
+  justify-content: left;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 20px;
+  height: auto;
+  border-style:none;
+  right:auto;
+}
+
+.browse-text{
+  position: relative;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+
+}
+
+.browse-healthy-recipes h2{
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size:40px;
+}
+
+#title {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size:40px;
+  text-align: center;
+  padding-bottom:20px;
+  margin-top:30px;
+}
+.browse-healthy-recipes{
+  display: flex;
+  border: 20px solid #fff;
+  background: #fbfbfd;
+  padding: 80px 50px;
+  box-shadow: 0px 50px 100px 0px rgb(12 0 46 / 5%);
+  box-sizing: border-box;
+}
+
+.browse-healthy-recipes p{
+  font-family:"Poppins";
+
+}
+
+/*Design Meal Plan Section */
+
+.design-meal-text{
+  position: relative;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+
+}
+
+.design-meal-plan h2{
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size:40px;
+}
+
+.design-meal-plan{
+  display: flex;
+  border: 20px solid #fff;
+  background: #fbfbfd;
+  padding: 80px 50px;
+  box-shadow: 0px 50px 100px 0px rgb(12 0 46 / 5%);
+  box-sizing: border-box;
+}
+
+.design-meal-plan p{
+  font-family:"Poppins";
+
+}
+
+.design-meal-img img{
+  width: 520px;
+  justify-content: right;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 20px;
+  height: auto;
+  border-style:none;
+  left:auto;
+}
+
+/*Grocery List Section*/
+.grocery-img img{
+  width: 520px;
+  left:auto;
+  justify-content: left;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 20px;
+  height: auto;
+  border-style:none;
+  right:auto;
+}
+
+.grocery-text{
+  position: relative;
+  width: 50%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+
+}
+
+.grocery-list h2{
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size:40px;
+}
+
+.grocery-list{
+  display: flex;
+  border: 20px solid #fff;
+  background: #fbfbfd;
+  padding: 80px 50px;
+  box-shadow: 0px 50px 100px 0px rgb(12 0 46 / 5%);
+  box-sizing: border-box;
+}
+
+.grocery-list p{
+  font-family:"Poppins";
+
+}
+
+

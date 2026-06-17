@@ -1,0 +1,33 @@
+.card h5{
+  font-family: "Poppins";
+  color:#E45644;
+}
+.card-body i{
+  font-size: 25px;
+  color:gray;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:20px;
+}
+
+.card-body a{
+  margin-right:35px;
+  margin-left:35px;
+
+}
+
+.card-title{
+  padding-top:10px;
+}
+
+.card-body i:hover{
+  color: rgba(228,86,68);
+}
+
+

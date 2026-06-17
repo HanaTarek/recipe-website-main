@@ -1,0 +1,55 @@
+<label for="image">image file</label>
+<input type="file" id="image" name="image" accept="*.png.jpg" (change)="upload($event)">
+<button (click)="uploadImage()">Upload</button>
+<h3>=========================</h3>
+<h3>=========================</h3>
+<h3>=========================</h3>
+<h3>=========================</h3>
+<button (click)="display()">display image</button>
+<div *ngIf="image | async as ImageObj">
+  <img [src]="ImageObj" alt="image preview" style="max-width: 100%;">
+</div>
+
+
+
+
+
+<h3>=========================</h3>
+<h3>=========================</h3>
+<h3>=========================</h3>
+<h3>=========================</h3>
+
+<p>discovery works!</p>
+<div *ngFor="let recipe of recipes | async">
+  <h3>{{ recipe.name }}</h3>
+  <h3>{{ recipe.description }}</h3>
+  <h3>{{ recipe.cuisine }}</h3>
+  <h3>{{ recipe.prep }}</h3>
+  <div *ngFor="let ingredien of recipe.ingredient">
+    <h3>{{ ingredien.name }}</h3>
+    <h3>{{ ingredien.quantity }}</h3>
+</div>
+<h3>=========================</h3>
+
+<div *ngIf="recipeX | async as recipe">
+  <h2>{{ recipe.name }} and {{ recipe.description }}</h2>
+</div>
+<p>discovery works!</p>
+<div *ngFor="let recipe of recipesF | async">
+  <h3>{{ recipe.name }}</h3>
+</div>
+<h3>=========================</h3>
+<div *ngFor="let recipe of recipesF | async">
+  <h3>{{ recipe.name }}</h3>
+</div>
+<h3>=========================</h3>
+<P> CUISINE WORKS !</P>
+<div  *ngFor="let recipe of recipesI | async"> CUISINE
+  <h2>{{ recipe.name }} and {{ recipe.description }} </h2>
+</div>
+<h3>=========================</h3>
+<P> ingriden WORKS !</P>
+<div  *ngFor="let recipe of recipeC | async"> CUISINE
+  <h2>{{ recipe.name }} and {{ recipe.description }} </h2>
+</div>
+

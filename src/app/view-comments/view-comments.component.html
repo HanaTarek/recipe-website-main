@@ -1,0 +1,19 @@
+<p>view-comments works!</p>
+<div class="header">
+  <hr>
+  <h2>COMMENTS</h2>
+  <hr>
+  </div>
+  <div *ngFor="let comment of Comment">
+    <div class="comment">
+      <div class="comment-header">
+        <div class="CommentRate">
+        <p-rating [(ngModel)]=comment.rate [readonly]="true" [cancel]="false"></p-rating>
+      </div>
+        <span class="comment-name">{{ comment.name }}</span>
+      </div>
+      <div class="comment-body">
+        {{ comment.comment }}
+        <hr>
+      </div>
+    </div>
