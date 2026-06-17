@@ -49,11 +49,21 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
+            },
+            "optimization": {
+              "fonts": {
+                "inline": false
+              }
             }
           },
           "configurations": {
             "production": {
               "budgets": [
+                  {
+                "type": "initial",
+                "maximumWarning": "1mb",
+                "maximumError": "2mb"
+              },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "4kb",
