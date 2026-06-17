@@ -1,4 +1,4 @@
-import { NgModule ,importProvidersFrom } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -78,11 +78,9 @@ import { ManageFollowersFollowingComponent } from './manage-followers-following/
   providers: [
     AuthService,
     provideClientHydration(),
-    importProvidersFrom([
-      provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-      provideAuth(() => getAuth()),
-      provideFirestore(() => getFirestore()),
-    ]),
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
     AngularFirestore,
     AngularFirestoreModule,
     AngularFireAuth,
